@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GROUP PLP</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="img/logo.png" class="logo" alt="plp">
+            <li class="prog"><a href="#">COLLEGE PROGRAMS</a><ion-icon name="caret-down-outline" class="icon"></ion-icon></li>
+            <ul>
+                <li><a href="home.html"><ion-icon name="home-outline" class="icon1"></ion-icon></a></ion-icon></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div id="accordion">
+                <h3>(COED) College of Education<ion-icon name="caret-down-outline" class="icon"></ion-icon></h3>
+                <div>
+                    <p>Bachelor of Elementary Education</p>
+                    <p>Bachelor of Secondary Education:</p>
+                    <ul>
+                        <li>Major in English</li>
+                        <li>Major in Filipino</li>
+                        <li>Major in Mathematics</li>
+                    </ul>
+                    <br>
+                    <p id="Dean">Dean: Maningas, Glicerio</p>
+                </div>
+                <h3>(CBA) College of Business and Accountancy<ion-icon name="caret-down-outline" class="icon"></ion-icon></h3>
+                <div>
+                    <p>Bachelor of Science in Accountancy</p>
+                    <p>Bachelor of Science in Business Administration:</p>
+                    <ul>
+                        <li>Major in Marketing Management</li>
+                    </ul>
+                    <p>Bachelor of Science in Entrepreneurship</p>
+                    <br>
+                    <p id="Dean">Dean: De Manuel, Joana Marie Pina</p>
+                </div>
+                <h3>(CCS) College of Computer Studies<ion-icon name="caret-down-outline" class="icon"></ion-icon></h3>
+                <div>
+                    <p>Bachelor of Science in Computer Science</p>
+                    <p>Bachelor of Science in Information Technology</p>
+                    <br>
+                    <p id="Dean">Dean: Tan, Regie</p>
+                </div>
+                <h3>(ECE) Electronics and Communications Engineering<ion-icon name="caret-down-outline" class="icon"></ion-icon></h3>
+                <div>
+                    <p>Bachelor of Science in Electronics Engineering</p>
+                    <br>
+                    <p id="Dean">Dean: Zapanta, Godofredo</p>
+                </div>
+                <h3>(CON) College of Nursing<ion-icon name="caret-down-outline" class="icon"></ion-icon></h3>
+                <div>
+                    <p>Bachelor of Science in Nursing</p>
+                    <br>
+                    <p id="Dean">Dean: Flores, Michelle</p>
+                </div>
+                <h3>(CIHM) College of International Hospitality Management<ion-icon name="caret-down-outline" class="icon"></ion-icon></h3>
+                <div>
+                    <p>Bachelor of Science in Hospitality Management</p>
+                    <br>
+                    <p id="Dean">Dean: Perez, Enrique</p>
+                </div>
+                <h3>(BSP) Bachelor of Science in Psychology<ion-icon name="caret-down-outline" class="icon"></ion-icon></h3>
+                <div>
+                    <p>Bachelor of Science in Psychology</p>
+                    <br>
+                    <p id="Dean">Dean: Arce, Marjorie</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    $(function () {
+        $("#accordion").accordion({
+            collapsible: true, // Make sections collapsible
+            active: false // Start with all sections collapsed
+        });
+    });
+</script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

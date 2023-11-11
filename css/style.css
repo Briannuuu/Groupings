@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#ede10089,#ede10089),url(../img/plpp.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0B7D3F;
+}
+
+.logo{
+    margin-left: 20px;
+    width: 70px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    border-radius: 25px;
+    border: 10px solid transparent;
+    background-color: transparent;
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #0B7D3F;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #0B7D3F;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #0B7D3F;
+    background-color: #ffffff5b;
+}
+
+.content h1{
+    font-size: 60px;
+    margin-top: 60px;
+}
+
+.content p{
+    margin: 20px auto;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 25px;
+    margin: 20px 10px;
+    border: 2px solid hsl(12, 98%, 51%);
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+span{
+    background: hsl(12, 98%, 51%);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    transition: 0.5s;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border: none;
+}
+
+.icon{
+    margin-left: 5px;
+}
+
+.icon1{
+    height: 30px;
+    width: 30px;
+}
+
+.prog{
+    border-radius: 25px;
+    border: 10px solid #ede100;
+    background-color: #ede100;
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.prog a{
+    text-decoration: none;
+    color: #0B7D3F;
+    text-transform: uppercase;
+}
+
+.prog:hover::after{
+    width: 100%;
+}
+
+.prog::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #0B7D3F;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
